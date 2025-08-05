@@ -90,6 +90,17 @@
     scroll-behavior: smooth;
   }
   </style>
+  <style>
+  .neon-box {
+    border: 2px solid #8a2be2;
+    background-color: transparent;
+    box-shadow:
+      0 0 10px #8a2be2,
+      0 0 20px #8a2be2,
+      0 0 30px #8a2be2,
+      0 0 40px #8a2be2;
+  }
+  </style>
   
   
 </head>
@@ -137,7 +148,7 @@
 
 <!-- ✅ HOME SECTION -->
 
-<section id="home" class="relative w-full h-[75vh] overflow-hidden text-white pt-24">  
+<section id="home" class="relative w-full h-[90vh] overflow-hidden text-white pt-24">  
   <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-[-1]">  
     <source src="InShot_20250804_160836182.mp4" type="video/mp4" />  
     Your browser does not support the video tag.  
@@ -170,7 +181,9 @@
   <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('image-1.png');"></div>
 
   <!-- Blue-Violet Glow Overlay -->
-  <div class="absolute inset-0 shadow-[inset_0_0_100px_40px_rgba(138,43,226,0.5)] z-10"></div>
+  <div class="neon-box p-6 text-white text-center text-xl font-semibold rounded-xl">
+  
+  </div>
 
   <!-- Glass Effect Container -->
   <div class="relative z-20 max-w-3xl p-8 rounded-xl bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-30 shadow-xl">
