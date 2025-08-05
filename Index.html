@@ -158,7 +158,7 @@
 
 <!-- ✅ ABOUT SECTION -->
     
-<section id="about" data-aos="fade-in" data-aos-duration="1500">
+<section id="about" data-aos="pop-up" data-aos-duration="1500">
 <section id="about" 
   class="snap-start h-screen relative w-full flex items-center justify-center px-6 py-16 overflow-hidden glow-border-blue glow-bottom-blue">
   <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('image-1.png');"></div>
@@ -181,7 +181,12 @@
 <!-- gallery Section --> 
   <section id="gallery" class="py-12 px-4 bg-black text-white">
   <h2 class="text-4xl text-center text-yellow-400 mb-10">🖼️ Our Gallery</h2>
-
+!-- Fade-in Pop-up Section -->
+<div
+  class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-md"
+  data-aos="slide-in"
+  data-aos-duration="1500"
+>
   <!-- Blue Glow Box -->
   <div class="neon-glow-box p-6 min-h-screen shadow-[0_0_8px_1px_rgba(0,191,255,0.3)] rounded-xl">
     
@@ -231,50 +236,64 @@
   </div>
   </section>
   
-  <!-- Pricing Section -->  
-    <section id="pricing" data-aos="fade-up-left" data-aos-duration="1000">
-  <section id="pricing" 
-    class="min-h-screen bg-cover bg-center flex items-center justify-center px-4 py-10 glow-border-blue glow-bottom-blue" style="background-image: url('image-4.png');"
-  <div class="bg-gray-800 bg-opacity-60 backdrop-md rounded-2xl p-8 max-w-3xl w-full text-white shadow-xl">  
-    <div class="min-h-screen border-2 border-pink-300 rounded-xl shadow-[0_0_30px_2px_rgba(244,114,182,0.3)] p-6">
-    <h1 class="text-4xl text-center text-yellow-400 mb-6">💰 Room Pricing</h1><h2 class="text-2xl font-semibold mt-4 mb-2">Weekday Rates</h2>  
-<ul class="list-disc list-inside mb-4">  
-  <li>Single Person: ₹600</li>  
-  <li>Standard Room (2 persons): ₹700</li>  
-  <li>Deluxe Room (2 persons): ₹900</li>  
-  <li>Triple Bedroom (4 persons): ₹1000</li>  
-</ul>  
+  <!-- Pricing Section -->
+<section id="pricing" data-aos="fade-up-left" data-aos-duration="1000" class="min-h-screen bg-cover bg-center flex items-center justify-center px-4 py-10" style="background-image: url('image-4.png');">
+  <div class="max-w-4xl w-full text-black">
 
-<h2 class="text-2xl font-semibold mt-4 mb-2">Weekend Rates</h2>  
-<ul class="list-disc list-inside mb-4">  
-  <li>Single Person: ₹700</li>  
-  <li>Standard Room (2 persons): ₹900</li>  
-  <li>Deluxe Room (2 persons): ₹1200</li>  
-  <li>Triple Bedroom (4 persons): ₹1400</li>  
-</ul>  
+    <!-- Main Heading -->
+    <h1 class="text-4xl text-center text-yellow-400 font-bold uppercase mb-10">💰 Room Pricing</h1>
 
-<h2 class="text-2xl font-semibold mt-4 mb-2">Seasonal Pricing (Apr 1 – Jun 10)</h2>  
-<ul class="list-disc list-inside mb-4">  
-  <li>Standard Room (1 person): ₹1000</li>  
-  <li>Standard Room (2 persons): ₹1200</li>  
-  <li>Deluxe Room (2 persons): ₹1500</li>  
-  <li>Triple Bedroom (4 persons): ₹1800</li>  
-</ul>  
+    <!-- Weekday Pricing -->
+    <div class="bg-gray-300 bg-opacity-60 backdrop-blur-md rounded-2xl p-6 mb-6 shadow-xl">
+      <h2 class="text-2xl font-bold text-blue-700 uppercase mb-2">Weekday Rates</h2>
+      <ul class="list-disc list-inside text-black">
+        <li>Single Person: ₹600</li>
+        <li>Standard Room (2 persons): ₹700</li>
+        <li>Deluxe Room (2 persons): ₹900</li>
+        <li>Triple Bedroom (4 persons): ₹1000</li>
+      </ul>
+    </div>
 
-<h2 class="text-2xl font-semibold mt-4 mb-2">Peak Weekends / Holidays</h2>  
-<ul class="list-disc list-inside mb-6">  
-  <li>Standard Room (1 person): ₹1500</li>  
-  <li>Deluxe Room (2 persons): ₹2300</li>  
-  <li>Triple Bedroom (4 persons): ₹2500</li>  
-</ul>  
+    <!-- Weekend Pricing -->
+    <div class="bg-gray-300 bg-opacity-60 backdrop-blur-md rounded-2xl p-6 mb-6 shadow-xl">
+      <h2 class="text-2xl font-bold text-pink-700 uppercase mb-2">Weekend Rates</h2>
+      <ul class="list-disc list-inside text-black">
+        <li>Single Person: ₹700</li>
+        <li>Standard Room (2 persons): ₹900</li>
+        <li>Deluxe Room (2 persons): ₹1200</li>
+        <li>Triple Bedroom (4 persons): ₹1400</li>
+      </ul>
+    </div>
 
-<div class="text-lg font-semibold">  
-  🚐 <strong>Tour Package:</strong> Ooty, Coonoor, Filmy Chakkar<br>  
-  Vehicle: Swaraj Mazda Van  
-</div>
-  </section>
-</style>
+    <!-- Seasonal Pricing -->
+    <div class="bg-gray-300 bg-opacity-60 backdrop-blur-md rounded-2xl p-6 mb-6 shadow-xl">
+      <h2 class="text-2xl font-bold text-green-700 uppercase mb-2">Seasonal Pricing (Apr 1 – Jun 10)</h2>
+      <ul class="list-disc list-inside text-black">
+        <li>Standard Room (1 person): ₹1000</li>
+        <li>Standard Room (2 persons): ₹1200</li>
+        <li>Deluxe Room (2 persons): ₹1500</li>
+        <li>Triple Bedroom (4 persons): ₹1800</li>
+      </ul>
+    </div>
 
+    <!-- Peak Weekend / Holiday Pricing -->
+    <div class="bg-gray-300 bg-opacity-60 backdrop-blur-md rounded-2xl p-6 shadow-xl">
+      <h2 class="text-2xl font-bold text-red-700 uppercase mb-2">Peak Weekends / Holidays</h2>
+      <ul class="list-disc list-inside text-black mb-4">
+        <li>Standard Room (1 person): ₹1500</li>
+        <li>Deluxe Room (2 persons): ₹2300</li>
+        <li>Triple Bedroom (4 persons): ₹2500</li>
+      </ul>
+
+      <!-- Tour Package -->
+      <div class="text-lg font-semibold text-black">
+        🚐 <strong>Tour Package:</strong> Ooty, Coonoor, Filmy Chakkar<br>
+        Vehicle: Swaraj Mazda Van
+      </div>
+    </div>
+
+  </div>
+</section>
     <!-- ✅ REVIEWS SECTION --> 
       
      <section id="reviews" data-aos="fade-right" data-aos-duration="1000">
@@ -355,8 +374,8 @@
 <!-- Guidelines Section -->
       <section id="guidelines" data-aos="zoom-in" data-aos-duration="1000">
 <section id="guidelines" class="bg-black py-12 px-4 sm:px-8">
-  <div class="max-w-3xl mx-auto border-2 border-green-400 rounded-xl shadow-lg p-6 sm:p-10 bg-black bg-opacity-60 backdrop-blur-md">
-    <div class="neon-glow-box p-6 min-h-screen shadow-[0_0_8px_1px_rgba(0,191,255,0.3)] rounded-xl">">
+  <div class="max-w-3xl mx-auto border-2 border-green-400 rounded-xl shadow-[0_0_20px_2px_rgba(0,255,0,0.4)]:p-10 bg-black bg-opacity-60 backdrop-blur-md">
+
     <!-- Heading -->
     <h2 class="text-4xl text-center text-yellow-400 mb-6">📌📖Stay Guidelines</h2>
 
