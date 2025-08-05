@@ -330,5 +330,53 @@
   // Initial check + on scroll  
   window.addEventListener("scroll", toggleNavbarVisibility);  
   window.addEventListener("load", toggleNavbarVisibility);  
-  </script>  </body>  
+  </script> 
+
+  <!-- Gallery Section -->
+<section id="gallery" class="bg-black py-12 px-4">
+  <h2 class="text-3xl font-bold text-center text-yellow-400 mb-6">🖼️ Gallery</h2>
+  <div class="overflow-x-auto whitespace-nowrap space-x-4 flex px-2">
+    <!-- Image Thumbnails -->
+    <img src="https://i.ibb.co/gqZLVwS/IMG-20250731-WA0005-1.jpg" class="w-60 h-40 object-cover rounded-lg cursor-pointer hover:scale-105 transition" onclick="openModal(this.src)" />
+    <img src="https://i.ibb.co/rRSB41wf/IMG-20250731-WA0024.jpg" class="w-60 h-40 object-cover rounded-lg cursor-pointer hover:scale-105 transition" onclick="openModal(this.src)" />
+    <img src="https://i.ibb.co/wNGG0rVR/IMG-20250731-WA0017.jpg" class="w-60 h-40 object-cover rounded-lg cursor-pointer hover:scale-105 transition" onclick="openModal(this.src)" />
+    <img src="https://i.ibb.co/LhS5t5Yk/IMG-20250731-WA0022.jpg" class="w-60 h-40 object-cover rounded-lg cursor-pointer hover:scale-105 transition" onclick="openModal(this.src)" />
+    <img src="https://i.ibb.co/gbTRdHQH/IMG-20250731-WA0021.jpg" class="w-60 h-40 object-cover rounded-lg cursor-pointer hover:scale-105 transition" onclick="openModal(this.src)" />
+    <img src="https://i.ibb.co/7xTDChwk/IMG-20250731-WA0019.jpg" class="w-60 h-40 object-cover rounded-lg cursor-pointer hover:scale-105 transition" onclick="openModal(this.src)" />
+    <img src="https://i.ibb.co/xKX4fgj9/IMG-20250731-WA0018.jpg" class="w-60 h-40 object-cover rounded-lg cursor-pointer hover:scale-105 transition" onclick="openModal(this.src)" />
+    <img src="https://i.ibb.co/zhV5qSDL/IMG-20250731-WA0016.jpg" class="w-60 h-40 object-cover rounded-lg cursor-pointer hover:scale-105 transition" onclick="openModal(this.src)" />
+    <img src="https://i.ibb.co/nNCj349K/IMG-20250731-WA0015.jpg" class="w-60 h-40 object-cover rounded-lg cursor-pointer hover:scale-105 transition" onclick="openModal(this.src)" />
+    <img src="https://i.ibb.co/KxBTwhBY/IMG-20250731-WA0014.jpg" class="w-60 h-40 object-cover rounded-lg cursor-pointer hover:scale-105 transition" onclick="openModal(this.src)" />
+  </div>
+</section>
+
+<!-- Modal Popup -->
+<div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50">
+  <div class="relative p-4 max-w-3xl w-full">
+    <img id="modalImage" src="" class="w-full h-auto rounded-lg shadow-lg mb-4" />
+    <a href="https://wa.me/919843830181?text=Hello%2C%20I%20would%20like%20to%20book%20a%20room%20after%20seeing%20the%20gallery%20photo." target="_blank"
+       class="block bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-6 py-3 rounded-full text-center mb-4">
+      💬 Book Now on WhatsApp
+    </a>
+    <button onclick="closeModal()" class="absolute top-2 right-2 text-white text-3xl font-bold">&times;</button>
+  </div>
+</div>
+  <script>
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+
+  function openModal(src) {
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    modalImg.src = src;
+  }
+
+  function closeModal() {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    modalImg.src = "";
+  }
+  </script>
+  
+</body>  
 </html>
