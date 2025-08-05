@@ -165,7 +165,8 @@
   <div class="absolute inset-0 bg-black bg-opacity-60 z-10">
     <div class="neon-glow-box p-6 min-h-screen">
   <div class="relative z-20 max-w-5xl text-white text-center sm:text-left backdrop-blur-sm p-6 sm:p-12 rounded-xl">
-    <h2 class="text-4xl sm:text-5xl mb-6 text-yellow-400 tracking-wide lato-heading">About Raja Lodge, Ooty</h2>
+    <h1 class="text-2xl md:text-3xl font-bold text-center mt-10">𝘼𝘽𝙊𝙐𝙏 𝙍𝘼𝙅𝘼 𝙇𝙊𝘿𝙂𝙀 🏨</h1>
+    
     <p class="text-sm sm:text-base leading-relaxed merri-text">
       Established in the heart of Ooty over <strong>45 years ago</strong>, Raja Lodge is one of the oldest and most trusted stays in the Queen of Hills.
     </p>
@@ -180,7 +181,7 @@
   
 <!-- gallery Section --> 
   <section id="gallery" class="py-12 px-4 bg-black text-white">
-  <h2 class="text-4xl text-center text-yellow-400 mb-10">🖼️ Our Gallery</h2>
+  <h1 class="text-2xl md:text-3xl font-bold text-center mt-10">𝙂𝘼𝙇𝙇𝙀𝙍𝙔 🖼️</h1>
 !-- Fade-in Pop-up Section -->
 <div
   class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-md"
@@ -235,13 +236,30 @@
 
   </div>
   </section>
+      <!-- Fullscreen Modal -->
+<div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center p-4 overflow-auto">
+  <span onclick="closeModal()" class="absolute top-4 right-6 text-white text-3xl cursor-pointer">&times;</span>
+  <img id="modalImage" class="max-w-full max-h-full rounded-lg">
+</div>
+
+<script>
+  function openModal(src) {
+    document.getElementById("modalImage").src = src;
+    document.getElementById("imageModal").classList.remove("hidden");
+  }
+  function closeModal() {
+    document.getElementById("imageModal").classList.add("hidden");
+  }
+</script>
+  
   
   <!-- Pricing Section -->
 <section id="pricing" data-aos="fade-up-left" data-aos-duration="1000" class="min-h-screen bg-cover bg-center flex items-center justify-center px-4 py-10" style="background-image: url('image-4.png');">
   <div class="max-w-4xl w-full text-black">
 
     <!-- Main Heading -->
-    <h1 class="text-4xl text-center text-yellow-400 font-bold uppercase mb-10">💰 Room Pricing</h1>
+    <h1 class="text-2xl md:text-3xl font-bold text-center mt-10">𝙋𝙍𝙄𝘾𝙄𝙉𝙂💰</h1>
+<h1 class="text-2xl md:text-3xl font-bold text-center mt-10">𝙍𝙀𝙑𝙄𝙀𝙒 ⭐</h1>
 
     <!-- Weekday Pricing -->
     <div class="bg-gray-300 bg-opacity-60 backdrop-blur-md rounded-2xl p-6 mb-6 shadow-xl">
@@ -298,7 +316,7 @@
       
      <section id="reviews" data-aos="fade-right" data-aos-duration="1000">
        <div class="neon-glow-box p-6 min-h-screen shadow-[0_0_8px_1px_rgba(0,191,255,0.3)] rounded-xl">">
-  <h2 class="text-4xl text-center text-yellow-400 mb-6">⭐ Guest Reviews</h2>
+  <h1 class="text-2xl md:text-3xl font-bold text-center mt-10">𝙍𝙀𝙑𝙄𝙀𝙒 ⭐</h1>
 <form id="reviewForm" 
   class="bg-gray-900 bg-opacity-70 rounded-xl p-6 mb-8 shadow-lg">  
   <input id="name" type="text" placeholder="Your Name" class="w-full mb-4 px-4 py-2 rounded bg-gray-800 text-white focus:outline-none" required>  
@@ -377,8 +395,7 @@
   <div class="max-w-3xl mx-auto border-2 border-green-400 rounded-xl shadow-[0_0_20px_2px_rgba(0,255,0,0.4)]:p-10 bg-black bg-opacity-60 backdrop-blur-md">
 
     <!-- Heading -->
-    <h2 class="text-4xl text-center text-yellow-400 mb-6">📌📖Stay Guidelines</h2>
-
+h1 class="text-2xl md:text-3xl font-bold text-center mt-10">𝙂𝙐𝙄𝘿𝙀𝙇𝙄𝙉𝙀𝙎 📌</h1>
     <!-- Location & Room Info -->
     <div class="mb-6 space-y-3 text-white text-base sm:text-lg font-bold leading-relaxed">
       <p class="">🚌 Just 5 minutes walk from Ooty bus stand</p>
@@ -425,7 +442,7 @@
         <section id="contact" class="w-full py-10 px-4 sm:px-6 text-white" style="background: linear-gradient(135deg, #000000, #0a2540); font-family: 'Segoe UI', sans-serif;">  
   <div class="max-w-md mx-auto"> 
 <div class="neon-glow-box p-6shadow shadow-[0_0_15px_2px_rgba(0,191,255,0.4)">
-    <h2 class="text-4xl text-center text-yellow-400 mb-6">📱 Contact RAJA LODGE OOTY</h2>
+    h1 class="text-2xl md:text-3xl font-bold text-center mt-10">𝘾𝙊𝙉𝙏𝘼𝘾𝙏 𝙍𝘼𝙅𝘼 𝙇𝙊𝘿𝙂𝙀 𝙋𝙃𝙊𝙉𝙀 📱</h1>
     </h2>  <div class="space-y-4 text-base sm:text-lg leading-relaxed">  
   <p><strong>📞 Phone:</strong>  
     <a href="tel:+919843830181" class="text-yellow-400 hover:underline">98438 30181</a>,  
@@ -471,21 +488,7 @@
   window.addEventListener("load", toggleNavbarVisibility);  
   </script> 
           
-<!-- Fullscreen Modal -->
-<div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center p-4 overflow-auto">
-  <span onclick="closeModal()" class="absolute top-4 right-6 text-white text-3xl cursor-pointer">&times;</span>
-  <img id="modalImage" class="max-w-full max-h-full rounded-lg">
-</div>
 
-<script>
-  function openModal(src) {
-    document.getElementById("modalImage").src = src;
-    document.getElementById("imageModal").classList.remove("hidden");
-  }
-  function closeModal() {
-    document.getElementById("imageModal").classList.add("hidden");
-  }
-</script>
 
   
 </body>  
