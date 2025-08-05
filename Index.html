@@ -105,29 +105,60 @@
   
 </head>
   
+  <!-- ✅ Navigation Bar -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-50 backdrop-blur-sm text-white py-4 px-6 flex justify-between items-center">
+    <div class="flex items-center space-x-3">
+      <img src="IMG-20250731-WA0005.jpg" alt="Raja Lodge Logo" class="w-10 h-10 rounded-full border-2 border-white">
+      <span class="text-xl sm:text-2xl font-extrabold tracking-wider uppercase">RAJA LODGE OOTY</span>
+    </div>
+    <div class="hidden sm:flex space-x-6 text-base font-semibold">
+      <a href="#home" class="hover:text-yellow-400 transition">Home</a>
+      <a href="#about" class="hover:text-yellow-400 transition">About</a>
+      <a href="#gallery" class="hover:text-yellow-400 transition">Gallery</a>
+      <a href="#pricing" class="hover:text-yellow-400 transition">Pricing</a>
+      <a href="#booking" class="hover:text-yellow-400 transition">Booking</a>
+      <a href="#reviews" class="hover:text-yellow-400 transition">Reviews</a>
+      <a href="#guidelines" class="hover:text-yellow-400 transition">Guidelines</a>
+      <a href="#contact" class="hover:text-yellow-400 transition">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ✅ Home Section -->
+  <section id="home" class="relative w-full h-[100vh] overflow-hidden text-white pt-32">
+    <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-[-1]">
+      <source src="InShot_20250804_160836182.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    
+    <div class="flex flex-col items-center justify-center h-full text-center px-4">
+      <img src="IMG-20250731-WA0005.jpg" alt="Raja Lodge Logo" class="w-28 h-28 rounded-full border-4 border-white mb-4 mt-6" />
+      
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-yellow-400">Welcome to RAJA LODGE</h1>
+      <p class="mt-2 text-lg sm:text-xl italic text-white leading-snug">
+        "Experience comfort in the Queen of Hills🏔️🌨️.<br>
+        Where warmth meets heritage❤️✨."
+      </p>
+      
+      <div class="mt-8 flex space-x-4">
+        <a href="tel:9384989077" class="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full border-2 border-white hover:bg-white hover:text-yellow-500 transition">
+          📞 Call Now
+        </a>
+        <a href="https://wa.me/919843830181?text=Welcome%20to%20Raja%20Lodge"
+           target="_blank"
+           class="bg-green-500 hover:bg-green-600 text-white text-2xl p-3 rounded-full shadow-lg">
+          💬
+        </a>
+      </div>
+    </div>
+  </section>
+  
 
 <body class="text-white bg-transperent">
   
 <div class="w-full overflow-x-hidden">
 
-<!-- ✅ GLASS NAVBAR -->
 
-<header class="bg-black/40 backdrop-blur-md text-white py-2 text-center shadow-md sticky top-0 z-50">
-  <div>
-    <h1 class="text-2xl sm:text-3xl font-bold tracking-wider">RAJA LODGE OOTY 🏨</h1>
-    <p class="text-sm sm:text-base mt-1 italic text-yellow-300">Since 1980</p>
-  </div>
-  <nav class="flex flex-wrap justify-center gap-4 mt-4 text-xs sm:text-sm font-bold uppercase tracking-widest elegant-nav">
-    <a href="#home" class="hover:text-yellow-300 transition-all">Home 🏠</a>
-    <a href="#about" class="hover:text-yellow-300 transition-all">About 🏨</a>
-    <a href="#gallery" class="hover:text-yellow-300 transition-all">Gallery 🖼️</a>
-    <a href="#pricing" class="hover:text-yellow-300 transition-all">Pricing 💰</a>
-    <a href="#reviews" class="hover:text-yellow-300 transition-all">Reviews ⭐</a>
-    <a href="#guidelines" class="hover:text-yellow-300 transition-all">Guidelines 📌</a>
-    <a href="#contact" class="hover:text-yellow-300 transition-all">Contact 📱</a>
-  </nav>
-</header>
-  <!-- Fixed Buttons -->
+    <!-- Fixed Buttons -->
 <div class="fixed bottom-4 right-4 flex flex-col gap-3 z-50">
   <!-- Call Button -->
   <a href="tel:+919843830181" class="bg-blue-500 hover:bg-blue-600 text-white text-2xl p-3 rounded-full shadow-lg">
@@ -142,36 +173,7 @@
     💬
   </a>
 </div>
-
-
-
-
-<!-- ✅ HOME SECTION -->
-
-<section id="home" class="relative w-full h-[100vh] overflow-hidden text-white pt-24">  
-  <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-[-1]">  
-    <source src="InShot_20250804_160836182.mp4" type="video/mp4" />  
-    Your browser does not support the video tag.  
-  </video>  
-  <div class="flex flex-col items-center justify-center h-full text-center px-4">  <img src="IMG-20250731-WA0005.jpg" alt="Raja Lodge Logo" class="w-28 h-28 rounded-full border-4 border-white mb-4 mt-6" />  
-<h1 class="text-3xl sm:text-4xl font-extrabold text-yellow-400">Welcome to RAJA LODGE</h1>  
-<p class="mt-2 text-lg sm:text-xl italic text-white leading-snug">  
-  "Experience comfort in the Queen of Hills🏔️🌨️.<br>  
-  Where warmth meets heritage❤️✨."  
-</p>  
-<div class="mt-8 flex space-x-4">  
-  <a href="tel:9384989077" class="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full border-2 border-white hover:bg-white hover:text-yellow-500 transition">  
-    📞 Call Now  
-  </a>  
-  <!-- WhatsApp Button with Pre-filled Message -->
-  <a href="https://wa.me/919843830181?text=Welcome%20to%20Raja%20Lodge" 
-     target="_blank" 
-     class="bg-green-500 hover:bg-green-600 text-white text-2xl p-3 rounded-full shadow-lg">
-    💬
-  </a>
-</div>
-  </div>  
-</section>
+  
 
 <!-- ✅ ABOUT SECTION -->
 
