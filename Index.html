@@ -41,24 +41,33 @@
 <body class="text-white bg-black">
 
   <!-- Home Page Navigation Bar -->
-  <div id="home-navbar" class="w-full fixed top-0 z-50 text-white px-4 py-2 bg-gray-700/50 backdrop-blur-md shadow-md">
-    <div class="flex flex-col items-center">
-      <!-- Logo & Lodge Name -->
-      <div class="text-base sm:text-lg font-extrabold tracking-wider text-center leading-tight">
-        <div class="uppercase">RAJA LODGE OOTY</div>
+<!-- Home Navbar Section -->
+<div id="home-navbar">
+  <!-- Transparent Header -->
+  <header class="bg-transparent text-white py-4 text-center">
+    <div>
+      <h1 class="text-2xl font-bold tracking-wider">
+        RAJA LODGE OOTY 🏨
+      </h1>
+      <p class="text-sm mt-1 italic text-gray-300">
+        Since 1980
+      </p>
+    </div>
+
+    <!-- Navigation Bar with Transparent Black Background -->
+    <div class="mt-4 bg-black bg-opacity-50 backdrop-blur rounded-md py-2 px-4">
+      <div class="flex flex-wrap justify-center gap-4 text-xs sm:text-sm font-bold uppercase tracking-widest elegant-nav">
+        <a href="#home" class="hover:text-yellow-300 transition-all">home🏠</a>
+        <a href="#about" class="hover:text-yellow-300 transition-all">About🏨</a>
+        <a href="#gallery" class="hover:text-yellow-300 transition-all">Gallery🖼️</a>
+        <a href="#pricing" class="hover:text-yellow-300 transition-all">Pricing💰</a>
+        <a href="#reviews" class="hover:text-yellow-300 transition-all">Reviews⭐</a>
+        <a href="#guidelines" class="hover:text-yellow-300 transition-all">Guidelines📌</a>
+        <a href="#contact" class="hover:text-yellow-300 transition-all">Contact📱</a>
       </div>
     </div>
-  </div> 
-  <!-- Navigation Links -->    
-  <div class="flex flex-wrap justify-center sm:justify-end gap-4 mt-1 sm:mt-0 text-xs sm:text-sm font-bold uppercase tracking-widest elegant-nav">    
-    <a href="#home" class="hover:text-yellow-300 transition-all">home🏠</a>    
-    <a href="#about" class="hover:text-yellow-300 transition-all">About🏨</a>    
-    <a href="#gallery" class="hover:text-yellow-300 transition-all">Gallery🖼️</a>    
-    <a href="#pricing" class="hover:text-yellow-300 transition-all">Pricing💰</a>    
-    <a href="#reviews" class="hover:text-yellow-300 transition-all">Reviews⭐</a>    
-    <a href="#guidelines" class="hover:text-yellow-300 transition-all">Guidelines📌</a>    
-    <a href="#contact" class="hover:text-yellow-300 transition-all">Contact📱</a>     </div>    
-  </nav>    
+  </header>
+</div>
 </div>  <!-- Fixed Buttons -->  <div class="fixed bottom-4 right-4 flex flex-col gap-3 z-50">    
   <a href="tel:+919843830181" class="bg-blue-500 hover:bg-blue-600 text-white text-2xl p-3 rounded-full shadow-lg">    
     📞    
